@@ -16,7 +16,7 @@ Created a telegram bot that sends me a reminder to solve a leetcode problem dail
 1. Add the telegram bot to the telegram group.
 2. To fetch the chat id from the group:
    1. send `/my_id <bot_username>` in the telegram group(for example:`/my_id reminder_bot`)
-   2. Hit `https://api.telegram.org/bot<add_token>/getUpdates` URL in the browser, you will receive a json reaponse which will include chat details:
+   2. Hit `https://api.telegram.org/bot<add_token>/getUpdates` URL in the browser, you will receive a json response which will include chat details:
       for example: `"chat":{"id": <chat_id>, "title":<group_name>,..}`
 3. Add this chat id in the below URL:
 `base_url="https://api.telegram.org/bot<add_token>/sendMessage?chat_id=<chat_id>&text=\"{}\"".format(message)`
