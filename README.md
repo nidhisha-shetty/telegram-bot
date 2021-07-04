@@ -21,7 +21,7 @@ Created a telegram bot that sends me a reminder to solve a leetcode problem dail
 3. Add this chat id in the below URL:
 `base_url="https://api.telegram.org/bot<add_token>/sendMessage?chat_id=<chat_id>&text=\"{}\"".format(message)`
 4. Executing the script will give you a reminder on your telegram app to solve a leetcode problem, however in this case you get the reminder on manually executing the script.
-5. Inorder, to automate the execution of the pytion script,you can add a task in pythonanywhere, which will execute the script at a particular time everyday automatically.
+5. Inorder, to automate the execution of the python script,you can add a task in pythonanywhere, which will execute the script at a particular time everyday automatically.
 
 
 
