@@ -2,7 +2,7 @@
 Created a telegram bot that sends me a reminder to solve a leetcode problem daily
 
 ## Requirements
-1. A telegram goup and chat id
+1. A telegram group and chat id
 2. A telegram bot
 
 ### Steps to create a telegram bot
