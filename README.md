@@ -21,7 +21,14 @@ Created a telegram bot that sends me a reminder to solve a leetcode problem dail
 3. Add this chat id in the below URL:
 `base_url="https://api.telegram.org/bot<add_token>/sendMessage?chat_id=<chat_id>&text=\"{}\"".format(message)`
 4. Executing the script will give you a reminder on your telegram app to solve a leetcode problem, however in this case you get the reminder on manually executing the script.
-5. Inorder, to automate the execution of the python script,you can add a task in pythonanywhere, which will execute the script at a particular time everyday automatically.
+5. Inorder, to automate the execution of the python script daily,you can add a cron job.
 
+## Steps to create a cron job
+1. Execute **crontab -e** command to select an editor (select 2 for default nano editor).
+2. Now, to create the job and exexute it at a specific time, enter the time of job execution in **minute hour days-in-month months days-of-week** format. <br><br>
+   For example: `45 5 * * *`
+   This indicates the job will execute at 5:45 all-days-in-a-month every-month all-days-of-week <br><br> 
+   That is, the job will execute daily at 5:45 <br><br>
+**Note:** Execute **cat /etc/crontab** command to know more about cron job creation commands.
 
 
